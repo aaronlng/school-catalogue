@@ -1,3 +1,5 @@
+//School Class
+
 class School {
     constructor(name, level, numberOfStudents) {
         this._name = name;
@@ -32,6 +34,19 @@ class School {
         } else {
             return 'Invalid input: numberOfStudents must be set to a Number.';
         }
+    }
+}
+
+//Primary School Class
+
+class PrimarySchool extends School {
+    constructor(name, numberOfStudents, pickupPolicy) {
+        super(name, 'primary', numberOfStudents);
+        this._pickupPolicy = pickupPolicy;
+    }
+
+    get pickupPolicy() {
+        return this._pickupPolicy;
     }
 }
 
