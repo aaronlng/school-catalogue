@@ -50,6 +50,19 @@ class PrimarySchool extends School {
     }
 }
 
+//High School Class
+
+class HighSchool extends School {
+    constructor(name, numberOfStudents, sportsTeams) {
+        super(name, 'high', numberOfStudents);
+        this._sportsTeams = sportsTeams;
+    }
+
+    get sportsTeams() {
+        console.log(this._sportsTeams);
+    }
+}
+
 //QuickFacts Method Test
 const binghamton = new School('Binghamton', 'high', 2000);
 binghamton.quickFacts();
