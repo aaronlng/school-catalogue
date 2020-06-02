@@ -70,3 +70,15 @@ binghamton.quickFacts();
 //PickSubstituteTeachers Method Test
 let teachers = ['Jim', 'Suzy', 'Fred', 'Marlene', 'Heather'];
 console.log(School.pickSubstituteTeachers(teachers));
+
+//Instances
+
+const lorraineHansbury = new PrimarySchool('Lorraine Hansbury', 514, 'Students must be picked up by a parent, guardian, or a family member over the age of 13.');
+
+lorraineHansbury.quickFacts();
+
+console.log(School.pickSubstituteTeachers(['Jamal Crawford', 'Lou Williams', 'J. R. Smith', 'James Harden', 'Jason Terry', 'Manu Ginoblie']));
+
+const alSmith = new HighSchool('Al E. Smith', 415, ['Baseball', 'Basketball', 'Volleyball', 'Track and Field']);
+
+alSmith.sportsTeams;
